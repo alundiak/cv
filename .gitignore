@@ -35,3 +35,7 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+# maybe not, because I may need lob on github.io
+bower_components
+

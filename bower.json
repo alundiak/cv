@@ -1,0 +1,20 @@
+{
+  "name": "cv",
+  "description": "My Curriculum Vitae",
+  "main": "index.js",
+  "authors": [
+    "Andrii Lundiak <landike@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/alundiak/cv",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "es6-shim": "^0.35.3"
+  }
+}
