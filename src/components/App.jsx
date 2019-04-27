@@ -1,8 +1,8 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 import { Container, Row, Col, Button } from 'reactstrap';
-import CurriculumVitaeVersion1 from './v1';
-import CurriculumVitaeVersion2 from './v2';
+import CurriculumVitaeVersion1 from './v1/v1';
+import CurriculumVitaeVersion2 from './v2/v2';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/app.less';

@@ -1,11 +1,11 @@
-import ReactDOM from 'react-dom';
+import React from 'react';
 import { PDFViewer } from '@react-pdf/renderer';
 import MyDocument from './MyDocument';
 
 const MyPdfViewer = () => (
-    <PDFViewer>
+    <PDFViewer width="500" height="500">
         <MyDocument />
     </PDFViewer>
 );
 
-ReactDOM.render(<MyPdfViewer />, document.getElementById('app'));
+export default MyPdfViewer;

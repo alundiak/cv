@@ -2,7 +2,7 @@ import React from 'react';
 import ReactPDF from '@react-pdf/renderer';
 import { Document, Page, Text, Image, Font, StyleSheet } from '@react-pdf/renderer';
 // import { PDFRenderer } from '@react-pdf/renderer';
-import { PDFDownloadLink } from '@react-pdf/renderer';
+import { PDFViewer, PDFDownloadLink, BlobProvider } from '@react-pdf/renderer';
 
 console.log(ReactPDF); // object
 
@@ -66,6 +66,13 @@ const styles = StyleSheet.create({
         color: 'grey',
     },
 });
+
+// const styles = StyleSheet.create({});
+
+// When <Quixote> rendered by Viewer and DownloadLink ro BlobProvider
+// due to (double call - I guess of) Font.register()
+// in console TypeError: Cannot read property 'hasGlyphForCodePoint' of null
+// Details: https://github.com/diegomura/react-pdf/issues/310#issuecomment-487303841
 
 /* eslint react/jsx-closing-tag-location: 0 */
 export const Quixote = () => (
@@ -252,13 +259,11 @@ export const Quixote = () => (
     </Document>
 );
 
-// export const QuixotePdfRendered = () => ReactPDF.render(<Quixote />);
-// TypeError: _react_pdf_renderer__WEBPACK_IMPORTED_MODULE_1__.default.render is not a function
-
-// ReactPDF.render(<Quixote />); // TypeError: _react_pdf_renderer__WEBPACK_IMPORTED_MODULE_1__.default.render is not a function
-// ReactPDF.PDFRenderer(<Quixote />); // TypeError: _react_pdf_renderer__WEBPACK_IMPORTED_MODULE_1__.default.PDFRenderer is not a function
-// PDFRenderer(<Quixote />); // TypeError: Object(...) is not a function
-// PDFRenderer(<Quixote />, `${__dirname}/output.pdf`); // TypeError: Object(...) is not a function
+export const QuixotePdfViewer = () => (
+    <PDFViewer width="500" height="500">
+        <Quixote />
+    </PDFViewer>
+);
 
 // PDFDownloadLink(<Quixote />, `${__dirname}/output.pdf`); // works
 export const QuixoteDownloadLink = () => (
@@ -266,3 +271,21 @@ export const QuixoteDownloadLink = () => (
         {({ loading }) => (loading ? 'Loading' : 'Download(quixote)')}
     </PDFDownloadLink>
 );
+
+export const QuixoteBlobProvider = () => (
+    <BlobProvider document={<Quixote />}>
+        {({ blob, url, loading, error }) => {
+            console.log(blob, url, loading, error);
+            return (loading ? 'Loading' : <iframe width="500" height="500" title="quixote-frame" src={url} />);
+        }}
+    </BlobProvider>
+);
+
+// export const QuixotePdfNodeRendered = () => ReactPDF.render(<Quixote />);
+// In browser:
+// TypeError: _react_pdf_renderer__WEBPACK_IMPORTED_MODULE_1__.default.render is not a function
+// But it should work in Node env.
+
+// ReactPDF.render(<Quixote />); // TypeError: _react_pdf_renderer__WEBPACK_IMPORTED_MODULE_1__.default.render is not a function
+// PDFRenderer(<Quixote />); // TypeError: Object(...) is not a function
+// PDFRenderer(<Quixote />, `${__dirname}/output.pdf`); // TypeError: Object(...) is not a function
