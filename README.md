@@ -11,17 +11,18 @@ My Curriculum Vitae Project
 * Maybe add section "My Ideal Company / Project" ported from wordpress article.
 * Add hobbies as icons.
 
+
 # Tech Notes
 
 * Github Pages deployed/hosted.
 * JavaScript/HTML/CSS based.
-* ES6/ES7 (no transpilers, no webpack-like tools. Maybe RequireJS for modules if needed).
-* Building tasks by using GulpJS.
+* ES6/ES7/ReactJS.
 * Designed Responsive and using all latest design features from web.
-* Data for CV, divided into sections might be in JSON, which we simply $.get() or maybe !!! maybe use RequireJS  -ideally ES6 Module, but it's not yet supported.
+* Data for CV, divided into sections might be in JSON.
 * Timeline? http://freefrontend.com/css-timelines/
 
-# Download PDF version
+
+# Tech Notes - Tools to create PDF file and download.
 
 * http://stackoverflow.com/questions/18191893/generate-pdf-from-html-in-div-using-javascript
 * `jsPDF` - https://github.com/MrRio/jsPDF
@@ -30,6 +31,20 @@ My Curriculum Vitae Project
 * TODO: https://www.npmjs.com/package/gulp-html2pdf
 * TODO: https://wkhtmltopdf.org/
 * https://github.com/devongovett/pdfkit ?
+
+
+# Tech Notes - using React tools
+* ? [ReactStrap](https://reactstrap.github.io/) ?
+* ? [Semantic UI React](https://react.semantic-ui.com/) ?
+* [react-pdf](https://github.com/wojtekmaj/react-pdf) (837 commits, last Apr-24-2019)
+    * Display PDFs in your React app as easily as if they were images. In fact it read existed file from local or remote, split by pages.
+    * depends/relies on [pdfjs-dist](https://www.npmjs.com/package/pdfjs-dist)
+    * works with webpack copy plugin.
+* [React-PDF](https://github.com/diegomura/react-pdf) aka `@react-pdf/renderer` (494 commits, last Apr-22-2019)
+    * Issue 1 - https://github.com/diegomura/react-pdf/issues/239
+    * Outdated, but still: https://gist.github.com/atolkachiov/dd2e257f669b1a5ca06e4f4514326d3b
+    *
+
 
 # Resources / Examples
 
@@ -51,6 +66,9 @@ My Curriculum Vitae Project
 * http://passportjs.org/ - looks like similar tiles as on github
 * https://www.campaignmonitor.com/create/ - nice tiles.
 * https://krostyslav.github.io/
+* http://www.paulinakowal.pl
+* https://www.atlassian.com/git/articles/10-years-of-git - nice examples for work projects history.
+* https://dribbble.com/shots/1091421-Infographic-resume-PSD
 
 
 # Other

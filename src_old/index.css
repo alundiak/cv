@@ -1,0 +1,33 @@
+/*body{
+    color: darkcyan;
+}*/
+
+/* 
+Code borrowed from:
+https://medium.com/@js_tut/css-grid-the-swiss-army-knife-for-cutting-website-and-application-layouts-c1bd7a6b4e56
+https://mozilladevelopers.github.io/playground/css-grid/02-first-grid/
+https://codepen.io/mozilladevelopers/pen/veXQmp
+*/
+.cv-grid {
+	display: grid;
+	grid-template-columns: 100px 100px 100px 100px 100px 200px;
+	grid-template-rows: 100px 100px;
+	grid-gap: 1rem;
+	/*grid-auto-flow: row;*/
+	/*grid-auto-rows: 50px;*/
+	grid-auto-flow: column;
+	grid-auto-columns: 50px;
+}
+
+.cv-grid * {
+	border: 1px solid green;
+}
+
+.item {
+  background-color: #1EAAFC;
+  background-image: linear-gradient(130deg, #6C52D9 0%, #1EAAFC 85%, #3EDFD7 100%);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  color: #fff;
+  border-radius: 4px;
+  border: 6px solid #171717;
+}

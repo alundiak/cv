@@ -1,0 +1,25 @@
+{
+  "name": "cv",
+  "description": "My Curriculum Vitae",
+  "main": "index.js",
+  "authors": [
+    "Andrii Lundiak <landike@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/alundiak/cv",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "es6-shim": "^0.35.3",
+    "jspdf": "^1.3.4",
+    "html2canvas": "^0.4.1",
+    "jquery": "^3.2.1",
+    "html2pdf": "https://github.com/eKoopmans/html2pdf.git",
+    "requirejs": "^2.3.3"
+  }
+}
