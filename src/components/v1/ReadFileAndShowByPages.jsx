@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'reactstrap';
 import { Document, Page } from 'react-pdf';
 
 // https://github.com/wojtekmaj/react-pdf
@@ -34,6 +35,7 @@ class ReadFileAndShowByPages extends React.PureComponent {
                     <Page pageNumber={2} />
                 </Document>
                 <p>Page {pageNumber} of {numPages}</p>
+                <Button color="primary">Download PDF (v1 - not finished)</Button>
             </div>
         );
     }

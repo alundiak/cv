@@ -10,6 +10,7 @@ export default env => {
     const { ifDev, ifProd } = getIfUtils(env);
     return {
         // target: 'web' // web by default behavior, but if need to use SSR, then need to switch to 'node'
+        // target: 'node'
         entry: './src/index.jsx',
         output: {
             path: resolve(__dirname, 'dist'),
@@ -19,6 +20,7 @@ export default env => {
 
         resolve: {
             modules: ['node_modules', 'src'],
+            // mainFields: ['module'/* , 'esm', 'jsnext:main', 'main', 'browser' */], // standard sequence is browser, main, module
             extensions: ['.js', '.jsx', '.json']
         },
 
@@ -60,7 +62,7 @@ export default env => {
                     ])
                 },
                 {
-                    test: /\.(png|svg|jpg|gif|pdf)$/,
+                    test: /\.(png|svg|jpg|gif|pdf|woff(2)?|ttf|eot|svg)$/,
 
                     // Simple usage
                     use: [
