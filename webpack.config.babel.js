@@ -16,6 +16,7 @@ export default env => {
             path: resolve(__dirname, 'dist'),
             publicPath: ifDev('/', './'),
             filename: 'cv.js'
+            // function works here, because it's Webpack v4.
         },
 
         resolve: {

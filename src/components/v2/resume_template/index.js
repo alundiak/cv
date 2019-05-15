@@ -160,3 +160,6 @@ export default Output; // in parent will be wrapped by PDFViewer
 // console.log(ReactPDF.render); // is available when to include "dist/react-pdf.es.js" or "dist/react-pdf.cjs.js
 
 // ReactPDF.render(<Output />, `${__dirname}/output-al.pdf`); // this will not render
+// Example of usage:
+// https://github.com/KerenChandran/resume/blob/master/src/index.js
+// But that code is outdated

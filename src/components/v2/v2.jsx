@@ -11,6 +11,7 @@ import { QuixoteBlobProvider } from './Quixote';
 // import MyPdfViewer from './MyPdfViewer';
 // import MyPdfDownloadLink from './MyPdfDownloadLink';
 // import MyBlobProvider from './MyBlobProvider';
+// import MyStyledDocumentViewer from './MyStyledDocumentViewer';
 import MyResumeUsingExample from './MyResumeUsingExample';
 
 const QuixoteExample = () => ( //eslint-disable-line
@@ -30,13 +31,14 @@ const QuixoteExample = () => ( //eslint-disable-line
 
 const MyCode = () => (
     <React.Fragment>
-        <MyResumeUsingExample />
-
         {/* <MyDocument /> */}
         {/* <MyPdfNodeRendered /> */}
         {/* <MyPdfViewer /> */}
         {/* <MyBlobProvider /> */}
         {/* <MyPdfDownloadLink /> */}
+        {/* <MyStyledDocumentViewer /> */}
+
+        <MyResumeUsingExample />
     </React.Fragment>
 );
 

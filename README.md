@@ -43,7 +43,7 @@ My Curriculum Vitae Project
 * [React-PDF](https://github.com/diegomura/react-pdf) aka `@react-pdf/renderer` (494 commits, last Apr-22-2019)
     * Issue 1 - https://github.com/diegomura/react-pdf/issues/239
     * Outdated, but still: https://gist.github.com/atolkachiov/dd2e257f669b1a5ca06e4f4514326d3b
-    *
+    * + ['@react-pdf/styled-components'](https://github.com/react-pdf/styled-components)
 
 
 # Resources / Examples
@@ -75,5 +75,6 @@ My Curriculum Vitae Project
 
 * https://enhancv.com/ - CV Online Creator
 * http://www.mastersportal.eu/articles/406/write-a-successful-motivation-letter-for-your-masters.html
+* https://www.indeed.com/career-advice/resumes-cover-letters/cv-format-guide
 * https://medium.com/pixelpoint/handoffs-guide-for-pixel-perfect-design-part-ii-d91999742dd9 - example of grid
 * http://bradfrost.github.io/this-is-responsive/patterns.html - use/look to patterns - code examples on codepen.
