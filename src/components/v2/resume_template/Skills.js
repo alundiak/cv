@@ -32,11 +32,16 @@ const Skills = () => (
   <View>
     <Title>Skills</Title>
     <SkillEntry
-      name="Combat Abilities"
+      name="Frontend"
       skills={[
-        'Completed Jedi Master training and built a lightsaber from scratch in order to do battle against the Empire',
-        'Defeated the Rancor and rescued Princess Leia from Jabba the Hutt',
-        'Competent fighter pilot as well as an excelent shot with nearly any weapon',
+        'JavaScript, CSS, HTML, LESS, SASS',
+        'Backbone/Marionette, React, Angular, NodeJS, npm, Webpack, Rollup, Babel'
+      ]}
+    />
+    <SkillEntry
+      name="Other"
+      skills={[
+        'Git, Unix, Jenkins, Bamboo'
       ]}
     />
   </View>

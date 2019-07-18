@@ -54,23 +54,30 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end',
     justifySelf: 'flex-end',
   },
-  title: {
+  company: {
     fontSize: 11,
     color: 'black',
     textDecoration: 'none',
     fontFamily: 'Lato Bold',
   },
+  position: {
+    fontSize: 11,
+    color: 'black',
+    textDecoration: 'none',
+    fontFamily: 'Lato Italic',
+  }
 });
 
+// eslint-disable-next-line
 const ExperienceEntry = ({ company, details, position, date }) => {
-  // console.log(details);
   /* eslint react/no-array-index-key: 0 */
-  const title = `${company} | ${position}`;
   return (
     <View style={styles.entryContainer}>
       <View style={styles.headerContainer}>
         <View style={styles.leftColumn}>
-          <Text style={styles.title}>{title}</Text>
+          <Text style={styles.company}>
+            <Text style={styles.company}>{company}</Text> | <Text style={styles.position}>{position}</Text>
+          </Text>
         </View>
         <View style={styles.rightColumn}>
           <Text style={styles.date}>{date}</Text>
@@ -89,44 +96,42 @@ const ExperienceEntry = ({ company, details, position, date }) => {
 
 const experienceData = [
   {
-    company: 'Jedi Temple, Coruseant',
-    date: 'A long time ago...',
+    company: 'GlobalLogic Poland',
+    date: '2016-present',
     details: [
-      'Started a new Jedi Temple in order to train the next generation of Jedi Masters',
-      'Discovered and trained a new generation of Jedi Knights, which he recruited from within the New Republic',
-      'Communicates with decesased Jedi Masters such as Anakin Skywalker, Yoda, Obi-Wan Kenobi in order to learn the secrets of the Jedi Order',
+      'Delivering client projects, using mainly Backbone/Marionette and ReactJS.',
+      'Contributing to Client shared UI toolkit, written mostly in ReactJS.',
+      'Taking part as SCRUM member of different projects, mainly as frontend developer.',
+      'Helping people with Git, NodeJS, npm and other technical stack, via provided tech talks, live coding sessions, webinars.',
     ],
-    position: 'Head Jedi Master',
+    position: 'Lead Web Developer',
   },
   {
-    company: 'Rebel Alliance',
-    date: 'A long time ago...',
+    company: 'Luxoft Poland',
+    date: '2015-2016',
     details: [
-      'Lead legions of troops into battle while demonstrating bravery, competence and honor',
-      'Created complicated battle plans in conjunction with other Rebel leaders in order to ensure the greatest chance of success',
-      'Defeated Darth Vader in single-combat, and convinced him to betray his mentor, the Emperor',
+      'Implementing Client back office page. Working with so called "webshell applications" based on top of NodeJS and D3JS-like component SDK',
+      'Also code changes related to BackboneJS and KnockoutJS.'
     ],
-    position: 'General',
+    position: 'Senior Web Developer',
   },
   {
-    company: 'Rebel Alliance',
-    date: 'A long time ago...',
+    company: 'SoftServe (Ukraine, Bulgaria)',
+    date: '2011-2015',
     details: [
-      'Destroyed the Death Star by using the force to find its only weakness and delivering a torpedo into the center of the ship',
-      'Commanded of squadron of X-Wings into battle',
-      'Defeated an enemy AT-AT single handedly after his ship was destroyed',
-      'Awarded a medal for valor and bravery in battle for his successful destruction of the Death Star',
+      'Mainly BackboneJS projects.',
     ],
-    position: 'Lieutenant Commander',
+    position: 'Middle Web Developer, Project Coordinator',
   },
   {
-    company: 'Tatooine Moisture Refinery',
-    date: 'A long time ago...',
+    company: 'SoftJourn (Ukraine)',
+    date: '2007-2011',
     details: [
-      'Replaced damaged power converters',
-      'Performed menial labor thoughout the farm in order to ensure its continued operation',
+      'PHP projects with Drupal, Apache server.',
+      'Java projects with Tomcat, Glassfish server.',
+      'JavaScript projects.',
     ],
-    position: 'Moisture Farmer',
+    position: 'Junior Web Developer',
   },
 ];
 

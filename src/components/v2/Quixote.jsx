@@ -1,10 +1,10 @@
 import React from 'react';
-import ReactPDF from '@react-pdf/renderer';
+// import ReactPDF from '@react-pdf/renderer';
 import { Document, Page, Text, Image, Font, StyleSheet } from '@react-pdf/renderer';
 // import { PDFRenderer } from '@react-pdf/renderer';
 import { PDFViewer, PDFDownloadLink, BlobProvider } from '@react-pdf/renderer';
 
-console.log(ReactPDF); // object
+// console.log(ReactPDF); // object
 
 // Font.register(
 //     'https://fonts.gstatic.com/s/oswald/v13/Y_TKV6o8WovbUd3m_X9aAA.ttf',

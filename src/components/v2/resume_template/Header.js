@@ -44,11 +44,11 @@ const styles = StyleSheet.create({
 export default () => (
   <View style={styles.container}>
     <View style={styles.detailColumn}>
-      <Text style={styles.name}>Luke Skywalker</Text>
-      <Text style={styles.subtitle}>Jedi Master</Text>
+      <Text style={styles.name}>Andrii Lundiak</Text>
+      <Text style={styles.subtitle}>Lead Web Developer</Text>
     </View>
     <View style={styles.linkColumn}>
-      <Link style={styles.link}>luke@theforce.com</Link>
+      <Link style={styles.link}>landike@gmail.com</Link>
     </View>
   </View>
 );

@@ -150,9 +150,9 @@ const Output = () => (
     subject="The resume of Andrii Lundiak"
     title="Resume (CV)"
   >
-    <ResumePage size="A4" />
+    {/* <ResumePage size="A4" /> */}
     <ResumePage orientation="landscape" size="A4" />
-    <ResumePage size={[380, 1250]} />
+    {/* <ResumePage size={[380, 1250]} /> */}
   </Document>
 );
 
