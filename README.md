@@ -34,8 +34,7 @@ My Curriculum Vitae Project
 
 
 # Tech Notes - using React tools
-* ? [ReactStrap](https://reactstrap.github.io/) ?
-* ? [Semantic UI React](https://react.semantic-ui.com/) ?
+* [ReactStrap](https://reactstrap.github.io/) ?
 * [react-pdf](https://github.com/wojtekmaj/react-pdf) (837 commits, last Apr-24-2019)
     * Display PDFs in your React app as easily as if they were images. In fact it read existed file from local or remote, split by pages.
     * depends/relies on [pdfjs-dist](https://www.npmjs.com/package/pdfjs-dist)
@@ -44,6 +43,7 @@ My Curriculum Vitae Project
     * Issue 1 - https://github.com/diegomura/react-pdf/issues/239
     * Outdated, but still: https://gist.github.com/atolkachiov/dd2e257f669b1a5ca06e4f4514326d3b
     * + ['@react-pdf/styled-components'](https://github.com/react-pdf/styled-components)
+* [React Helmet](https://github.com/nfl/react-helmet)
 
 
 # Resources / Examples
