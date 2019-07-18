@@ -12,7 +12,7 @@
     "src"
   ],
   "bundledDependencies": false,
-  "homepage": "hhttps://github.com/alundiak/cv#readme",
+  "homepage": "https://github.com/alundiak/cv",
   "scripts": {
     "devBuild": "rm -rf dist && webpack --mode development --env.dev --progress",
     "prodBuild": "rm -rf dist && webpack --mode production --env.prod",
