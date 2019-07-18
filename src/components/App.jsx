@@ -5,11 +5,14 @@ import { TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap';
 import classnames from 'classnames';
 
 import CurriculumVitaeVersion1 from './v1/v1';
-// import CurriculumVitaeVersion2 from './v2/v2';
+import CurriculumVitaeVersion2 from './v2/v2';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/app.less';
 
+import WithRouting from './WithRouting';
+
+// const LazyCurriculumVitaeVersion1 = React.lazy(() => import('./v1/v1'));
 const LazyCurriculumVitaeVersion2 = React.lazy(() => import('./v2/v2'));
 
 /* eslint react/no-multi-comp: 0 */
@@ -20,53 +23,13 @@ const SimpleApp = () => (
                 <CurriculumVitaeVersion1 />
             </Col>
             <Col xs="6">
-                {/* <CurriculumVitaeVersion2 /> */}
+                <CurriculumVitaeVersion2 />
             </Col>
         </Row>
     </Container>
 );
 
 export { SimpleApp };
-
-class SuspendedApp extends React.Component {
-    state = {
-        showV1: false,
-        showV2: false
-    };
-
-    showV1Click = () => this.setState({ showV1: true });
-
-    showV2Click = () => this.setState({ showV2: true });
-
-    render() {
-        const { showV1, showV2 } = this.state;
-
-        return (
-            <Container>
-                <Row>
-                    <Col xs="6">
-                        <Button color="primary" onClick={this.showV1Click}>Show V1</Button>
-                        {
-                            showV1 ? <CurriculumVitaeVersion1 /> : null
-                        }
-                    </Col>
-                    <Col xs="6">
-                        <Button color="primary" onClick={this.showV2Click}>Show V2</Button>
-                        {
-                            showV2 ? (
-                                <React.Suspense fallback={<div>Simple Loading...</div>}>
-                                    <LazyCurriculumVitaeVersion2 />
-                                </React.Suspense>
-                            ) : null
-                        }
-                    </Col>
-                </Row>
-            </Container>
-        );
-    }
-}
-
-export { SuspendedApp };
 
 const tabsContent = [
     {
@@ -75,8 +38,8 @@ const tabsContent = [
     },
     {
         index: 2,
-        // component: CurriculumVitaeVersion2
-        component: () => <div>aaa</div>
+        component: CurriculumVitaeVersion2
+        // component: () => <div>aaa</div>
     }
 ];
 
@@ -134,8 +97,55 @@ class TabsApp extends React.Component {
 
 export { TabsApp };
 
+class SuspendedApp extends React.Component {
+    state = {
+        showV1: false,
+        showV2: false
+    };
+
+    showV1Click = () => this.setState({ showV1: true });
+
+    showV2Click = () => this.setState({ showV2: true });
+
+    render() {
+        const { showV1, showV2 } = this.state;
+
+        return (
+            <Container>
+                <Row>
+                    <Col xs="6">
+                        <Button color="primary" onClick={this.showV1Click}>Show V1</Button>
+                        {
+                            showV1 ? <CurriculumVitaeVersion1 /> : null
+                        }
+                    </Col>
+                    <Col xs="6">
+                        <Button color="primary" onClick={this.showV2Click}>Show V2</Button>
+                        {
+                            showV2 ? (
+                                <React.Suspense fallback={<div>Simple Loading...</div>}>
+                                    <LazyCurriculumVitaeVersion2 />
+                                </React.Suspense>
+                            ) : null
+                        }
+                    </Col>
+                </Row>
+            </Container>
+        );
+    }
+}
+
+export { SuspendedApp };
+
+const RoutingApp = () => (
+    <Container>
+        <WithRouting />
+    </Container>
+);
+
 export default {
     SimpleApp,
+    TabsApp,
     SuspendedApp,
-    TabsApp
+    RoutingApp
 };
