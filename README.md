@@ -74,6 +74,7 @@ My Curriculum Vitae Project
 # Other
 
 * https://enhancv.com/ - CV Online Creator
+; https://resumedone.io/ - Another CV Builder online
 * http://www.mastersportal.eu/articles/406/write-a-successful-motivation-letter-for-your-masters.html
 * https://www.indeed.com/career-advice/resumes-cover-letters/cv-format-guide
 * https://medium.com/pixelpoint/handoffs-guide-for-pixel-perfect-design-part-ii-d91999742dd9 - example of grid
