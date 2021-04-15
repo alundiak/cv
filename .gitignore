@@ -38,4 +38,5 @@ jspm_packages
 
 # maybe not, because I may need lob on github.io
 bower_components
+dist
 
