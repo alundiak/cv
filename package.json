@@ -2,11 +2,6 @@
   "name": "@lundiak/cv",
   "version": "1.0.0",
   "description": "My Curriculum Vitae",
-  "browser": "dist/app.js",
-  "module": "src/App.jsx",
-  "main": "dist/app.js",
-  "esm": "src/App.jsx",
-  "jsnext:main": "src/App.jsx",
   "files": [
     "dist",
     "src"
@@ -26,8 +21,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@react-pdf/renderer": "^1.6.8",
-    "@react-pdf/styled-components": "^1.4.0",
+    "@react-pdf/renderer": "^2.0.4",
     "bootstrap": "^4.4.1",
     "gh-pages": "^2.2.0",
     "html2pdf": "0.0.11",
@@ -35,7 +29,8 @@
     "react-helmet": "^5.2.1",
     "react-pdf": "^4.1.0",
     "react-router-dom": "^5.1.2",
-    "reactstrap": "^8.4.0"
+    "reactstrap": "^8.4.0",
+    "styled-components": "^3.4.10"
   },
   "devDependencies": {
     "@babel/core": "^7.8.3",

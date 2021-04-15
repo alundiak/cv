@@ -1,8 +1,9 @@
 import React from 'react';
 import { PDFViewer, Document, Page } from '@react-pdf/renderer';
-import styled from '@react-pdf/styled-components';
+import styled from 'styled-components';
 
-const Heading = styled.Text`
+// was styled.Text from @react-pdf/styled-components
+const Heading = styled.header`
   margin: 10px;
   font-size: 22px;
   font-family: 'Helvetica';
@@ -13,7 +14,7 @@ const MyDocument = () => (
     <Document>
         <Page>
             <Heading>
-                Andrii Lundiak
+                Andrii Lundiak a
             </Heading>
         </Page>
     </Document>
