@@ -8,7 +8,7 @@ const WithHelmet = () => (
     <React.Fragment>
         <Helmet>
             <meta charSet="utf-8" />
-            <title>My Helmet</title>
+            <title>My CV</title>
             <link rel="canonical" href="https://github.com/alundiak/cv" />
         </Helmet>
         <App.RoutingApp />

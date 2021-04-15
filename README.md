@@ -39,10 +39,11 @@ My Curriculum Vitae Project
     * Display PDFs in your React app as easily as if they were images. In fact it read existed file from local or remote, split by pages.
     * depends/relies on [pdfjs-dist](https://www.npmjs.com/package/pdfjs-dist)
     * works with webpack copy plugin.
-* [React-PDF](https://github.com/diegomura/react-pdf) aka `@react-pdf/renderer` (494 commits, last Apr-22-2019)
+* [React-PDF](https://github.com/diegomura/react-pdf) aka `@react-pdf/renderer` (611 commits, last Apr-15-2021)
     * Issue 1 - https://github.com/diegomura/react-pdf/issues/239
     * Outdated, but still: https://gist.github.com/atolkachiov/dd2e257f669b1a5ca06e4f4514326d3b
-    * + ['@react-pdf/styled-components'](https://github.com/react-pdf/styled-components)
+    * deprecated ['@react-pdf/styled-components'](https://github.com/react-pdf/styled-components)
+    * https://react-pdf.org/blog/announcing-react-pdf-v2
 * [React Helmet](https://github.com/nfl/react-helmet)
 
 
