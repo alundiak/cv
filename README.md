@@ -47,6 +47,7 @@ My Curriculum Vitae Project
 * [React Helmet](https://github.com/nfl/react-helmet)
 
 
+
 # Resources / Examples
 
 * http://tojoshan.deviantart.com/art/My-Skills-191335061 - skills pie/graph/donut/etc
@@ -80,3 +81,5 @@ My Curriculum Vitae Project
 * https://www.indeed.com/career-advice/resumes-cover-letters/cv-format-guide
 * https://medium.com/pixelpoint/handoffs-guide-for-pixel-perfect-design-part-ii-d91999742dd9 - example of grid
 * http://bradfrost.github.io/this-is-responsive/patterns.html - use/look to patterns - code examples on codepen.
+- https://www.telerik.com/blogs/generating-pdf-html-react-demo-exporting-invoices
+- https://github.com/bergenhem/kendoreact-pdf-export-sample-app
