@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "description": "My Curriculum Vitae",
-  "homepage": "https://github.com/alundiak/cv",
+  "homepage": "https://alundiak.github.io/cv/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
