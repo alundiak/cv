@@ -1,6 +1,11 @@
 // https://levelup.gitconnected.com/deploying-a-create-react-app-with-routing-to-github-pages-f386b6ce84c2
 import React from 'react';
-import { HashRouter, Route } from 'react-router-dom';
+import {
+    HashRouter,
+    BrowserRouter,
+    Routes,
+    Route
+} from 'react-router-dom';
 import MainMenu from './MainMenu';
 
 // const Version1 = () => <div><h2>Version1</h2></div>;
@@ -24,15 +29,32 @@ import Version2 from './v2/v2';
 //     </React.Suspense>
 // );
 
-const WithRouting = () => (
+// It will use "#" between host name and actual route.
+const WithHashRouter = () => (
     <HashRouter basename="/">
         <div>
             <MainMenu />
-            <Route exact path="/" component={Version1} />
-            <Route path="/version2" component={Version2} />
+            <Routes>
+                <Route path="/version1" element={<Version1 />} />
+                <Route path="/version2" element={<Version2 />} />
+            </Routes>
         </div>
     </HashRouter>
 );
 
-export default WithRouting;
-// export { WithRouting };
+const WithBrowserRouter = () => (
+    <BrowserRouter>
+        <div>
+            <MainMenu />
+            <Routes>
+                <Route path="/version1" element={<Version1 />} />
+                <Route path="/version2" element={<Version2 />} />
+            </Routes>
+        </div>
+    </BrowserRouter>
+);
+
+export {
+    WithBrowserRouter,
+    WithHashRouter
+};

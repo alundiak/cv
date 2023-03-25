@@ -45,7 +45,7 @@ export default () => (
   <View style={styles.container}>
     <View style={styles.detailColumn}>
       <Text style={styles.name}>Andrii Lundiak</Text>
-      <Text style={styles.subtitle}>Lead Web Developer</Text>
+      <Text style={styles.subtitle}>Fullstack Architect</Text>
     </View>
     <View style={styles.linkColumn}>
       <Link style={styles.link}>landike@gmail.com</Link>

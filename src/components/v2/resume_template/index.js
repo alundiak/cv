@@ -17,7 +17,7 @@ import Education from './Education';
 import Experience from './Experience';
 import Skills from './Skills';
 
-import avatarImage from './andrii-lundiak_612x821.png';
+import avatarImage from './andrii-lundiak-2023.jpg';
 
 // console.log(Font); // to verify from which folder it's taken
 

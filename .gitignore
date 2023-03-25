@@ -176,3 +176,6 @@ dist
 .svelte-kit
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,node
+
+# React/CRA/Webpack build output folder
+build

@@ -8,9 +8,9 @@ import CurriculumVitaeVersion1 from './v1/v1';
 import CurriculumVitaeVersion2 from './v2/v2';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../css/app.less';
+import './App.css';
 
-import WithRouting from './WithRouting';
+import * as Routing from './WithRouting';
 
 // const LazyCurriculumVitaeVersion1 = React.lazy(() => import('./v1/v1'));
 const LazyCurriculumVitaeVersion2 = React.lazy(() => import('./v2/v2'));
@@ -139,7 +139,8 @@ export { SuspendedApp };
 
 const RoutingApp = () => (
     <Container>
-        <WithRouting />
+        {/* <Routing.WithHashRouter /> */}
+        <Routing.WithBrowserRouter />
     </Container>
 );
 

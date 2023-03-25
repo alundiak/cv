@@ -41,18 +41,13 @@ export default class MainMenu extends React.Component {
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink href="/portfolio/">Portfolio (TBD)</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="https://github.com/alundiak">GitHub</NavLink>
+                                <NavLink href="https://github.com/alundiak" target={'_blank'}>GitHub</NavLink>
                             </NavItem>
                             <UncontrolledDropdown nav inNavbar>
-                                <DropdownToggle nav caret>
-                                    (CV) Versions
-                                </DropdownToggle>
-                                <DropdownMenu right>
+                                <DropdownToggle nav caret>CV</DropdownToggle>
+                                <DropdownMenu end>
                                     <DropdownItem>
-                                        <Link to="/">Version1</Link>
+                                        <Link to="/version1">Version1</Link>
                                     </DropdownItem>
                                     <DropdownItem>
                                         <Link to="/version2">Version2</Link>

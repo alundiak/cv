@@ -96,8 +96,26 @@ const ExperienceEntry = ({ company, details, position, date }) => {
 
 const experienceData = [
   {
+    company: 'Sopra Steria',
+    date: '2021-present',
+    details: [
+      'tbd1',
+      'tbd2'
+    ],
+    position: 'Software Architect',
+  },
+  {
+    company: 'EQ Tek',
+    date: '2019-2021',
+    details: [
+      'tbd1',
+      'tbd2'
+    ],
+    position: 'Fullstack Developer',
+  },
+  {
     company: 'GlobalLogic Poland',
-    date: '2016-present',
+    date: '2016-2019',
     details: [
       'Delivering client projects, using mainly Backbone/Marionette and ReactJS.',
       'Contributing to Client shared UI toolkit, written mostly in ReactJS.',
